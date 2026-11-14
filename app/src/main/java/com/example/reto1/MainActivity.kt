@@ -8,6 +8,11 @@ import android.widget.Toast
 import android.view.View
 import android.widget.AdapterView
 import android.widget.Spinner
+import android.widget.Button
+import android.widget.EditText
+import android.widget.RadioButton
+import android.widget.RadioGroup
+import android.widget.TextView
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,6 +40,24 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {}
+        }
+        val etName = findViewById<EditText>(R.id.etName)
+        val rgModalidad = findViewById<RadioGroup>(R.id.rgModalidad)
+        val tvResultado = findViewById<TextView>(R.id.tvResultado)
+        val btnGuardar = findViewById<Button>(R.id.btnGuardar2)
+
+        btnGuardar.setOnClickListener {
+            val nombre = etName.text.toString()
+
+            val tecnologias = mutableListOf<String>()
+            if (cbAndroid.isChecked) tecnologias.add("Android")
+            if (cbReact.isChecked) tecnologias.add("React")
+            if (cbFlutter.isChecked) tecnologias.add("Flutter")
+
+            val modalidad = findViewById<RadioButton>(rgModalidad.checkedRadioButtonId).text
+            val curso = spinnerCurso.selectedItem.toString()
+
+            tvResultado.text = "Nombre: $nombre\nTecnologías: ${tecnologias.joinToString()}\nModalidad: $modalidad\nCurso: $curso"
         }
     }
 }
