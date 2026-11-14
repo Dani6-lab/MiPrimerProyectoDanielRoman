@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.widget.CheckBox
 import android.widget.CompoundButton
 import android.widget.Toast
+import android.view.View
+import android.widget.AdapterView
+import android.widget.Spinner
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,5 +25,16 @@ class MainActivity : AppCompatActivity() {
         cbAndroid.setOnCheckedChangeListener(listenerCheck)
         cbReact.setOnCheckedChangeListener(listenerCheck)
         cbFlutter.setOnCheckedChangeListener(listenerCheck)
+
+        val spinnerCurso = findViewById<Spinner>(R.id.spinnerCurso)
+
+        spinnerCurso.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
+                val curso = parent.getItemAtPosition(position).toString()
+                Toast.makeText(this@MainActivity, "Curso: $curso", Toast.LENGTH_SHORT).show()
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>) {}
+        }
     }
 }
