@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF"
+    tools:ignore="TouchTargetSizeTooSmall">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_ejemplo_componentes"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#2B2B2B"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_seccion_informacion"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#3D3D3D"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descripcion_textview"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="24dp" />
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/images"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="28dp"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tvProgressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_progreso_50"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:layout_marginBottom="6dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarHorizontal"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="50"
+            android:progressTint="#65558F"
+            android:layout_marginBottom="28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_seccion_videoview"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#3D3D3D"
+            android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:id="@+id/videoViewImage"
+            android:layout_width="170dp"
+            android:layout_height="240dp"
+            android:src="@drawable/video"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="28dp"
+            android:contentDescription="@string/titulo_seccion_videoview" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_seccion_webview"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#3D3D3D"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/images"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="@string/etiqueta_developers" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/etiqueta_developers"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#202124" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/webViewImage"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/videoss"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="28dp"
+            android:contentDescription="@string/titulo_seccion_webview" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_seccion_interaccion"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#3D3D3D"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pista_nombre"
+            android:autofillHints="name"
+            android:textColorHint="#999999"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_seleccionar_tecnologias"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#3D3D3D"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/cbAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcion_tecnologia_android"
+            android:textSize="15sp"
+            android:layout_marginBottom="4dp" />
+
+        <CheckBox
+            android:id="@+id/cbReact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcion_tecnologia_react"
+            android:textSize="15sp"
+            android:layout_marginBottom="4dp" />
+
+        <CheckBox
+            android:id="@+id/cbFlutter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcion_tecnologia_flutter"
+            android:textSize="15sp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_seleccionar_modalidad"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#3D3D3D"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgModalidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/rbPresencial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/opcion_modalidad_presencial"
+                android:textSize="15sp"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbOnline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/opcion_modalidad_online"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rbMixta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/opcion_modalidad_mixta"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_seleccionar_curso"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#3D3D3D"
+            android:layout_marginBottom="6dp" />
+
+        <Spinner
+            android:id="@+id/spinnerCurso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/lista_opciones_curso"
+            android:layout_marginBottom="24dp"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_nivel_seleccionado"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#3D3D3D"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etNivel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pista_nivel_defecto"
+            android:autofillHints=""
+            android:inputType="number"
+            android:textSize="16sp"
+            android:layout_marginBottom="28dp" />
+
+        <Button
+            android:id="@+id/btnGuardar2"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="@string/boton_guardar_informacion"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:backgroundTint="#65558F"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="28dp" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resultado_marcador_posicion"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="32dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,61 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Base green circle -->
+    <path
+        android:fillColor="#3DDC84"
+        android:pathData="M60,0 A60,60 0 1,1 59.99,0 Z" />
+
+    <!-- Subtle grid overlay -->
+    <path
+        android:strokeColor="#52EA99"
+        android:strokeWidth="0.8"
+        android:pathData="M15,60 L105,60 M60,15 L60,105 M30,60 L30,105 M90,60 L90,105 M60,30 L105,30 M60,90 L105,90 M45,60 L45,105 M75,60 L75,105 M60,45 L105,45 M60,75 L105,75 M30,30 L90,90 M90,30 L30,90" />
+
+    <!-- Android Bug Robot (White) centered inside circle -->
+    <!-- Head -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M42,50 A18,18 0 0,1 78,50 Z" />
+
+    <!-- Left Antenna -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M47,35 L43,28" />
+
+    <!-- Right Antenna -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M73,35 L77,28" />
+
+    <!-- Eyes -->
+    <path
+        android:fillColor="#3DDC84"
+        android:pathData="M49,43 A1.5,1.5 0 1,1 48.99,43 Z" />
+    <path
+        android:fillColor="#3DDC84"
+        android:pathData="M71,43 A1.5,1.5 0 1,1 70.99,43 Z" />
+
+    <!-- Body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M42,53 H78 V75 C78,77.2 76.2,79 74,79 H46 C43.8,79 42,77.2 42,75 Z" />
+
+    <!-- Left Arm -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M37,54 H40 V72 H37 C35.3,72 34,70.7 34,69 V57 C34,55.3 35.3,54 37,54 Z" />
+
+    <!-- Right Arm -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M80,54 H83 C84.7,54 86,55.3 86,57 V69 C86,70.7 84.7,72 83,72 H80 Z" />
+
+</vector>

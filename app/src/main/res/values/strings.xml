@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">reto1</string>
+    <string name="titulo_ejemplo_componentes">Ejemplo de componentes\nAndroid</string>
+    <string name="titulo_seccion_informacion">Componentes para mostrar información</string>
+    <string name="descripcion_textview">Este texto se muestra mediante un TextView.</string>
+    <string name="etiqueta_progreso_50">Progreso: 50%</string>
+    <string name="titulo_seccion_videoview">VideoView</string>
+    <string name="titulo_seccion_webview">WebView</string>
+    <string name="etiqueta_developers">Developers</string>
+    <string name="titulo_seccion_interaccion">Componentes de entrada e interacción</string>
+    <string name="pista_nombre">Introduce tu nombre</string>
+    <string name="etiqueta_seleccionar_tecnologias">Selecciona tecnologías:</string>
+    <string name="opcion_tecnologia_android">Android</string>
+    <string name="opcion_tecnologia_react">React</string>
+    <string name="opcion_tecnologia_flutter">Flutter</string>
+    <string name="etiqueta_seleccionar_modalidad">Selecciona una modalidad:</string>
+    <string name="opcion_modalidad_presencial">Presencial</string>
+    <string name="opcion_modalidad_online">Online</string>
+    <string name="opcion_modalidad_mixta">Mixta</string>
+    <string name="etiqueta_seleccionar_curso">Selecciona un curso:</string>
+    <string name="etiqueta_nivel_seleccionado">Nivel seleccionado:</string>
+    <string name="pista_nivel_defecto">50</string>
+    <string name="boton_guardar_informacion">Guardar información</string>
+    <string name="resultado_marcador_posicion">Aquí aparecerá el resultado.</string>
+
+    <string-array name="lista_opciones_curso">
+        <item>1.º DAM</item>
+        <item>2.º DAM</item>
+        <item>1.º DAW</item>
+        <item>2.º DAW</item>
+        <item>1.º ASIR</item>
+    </string-array>
+</resources>
