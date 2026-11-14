@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
             val modalidad = findViewById<RadioButton>(rgModalidad.checkedRadioButtonId).text
             val curso = spinnerCurso.selectedItem.toString()
 
-            tvResultado.text = "Nombre: $nombre\nTecnologías: ${tecnologias.joinToString()}\nModalidad: $modalidad\nCurso: $curso"
+            tvResultado.text = "Resumen: $nombre\nTecnologías: ${tecnologias.joinToString()}\nModalidad: $modalidad\nCurso: $curso"
         }
     }
 }
